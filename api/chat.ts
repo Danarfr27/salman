@@ -1,10 +1,10 @@
-import { config as dotenvConfig } from "dotenv";
+import dotenv from "dotenv";
 import fs from "fs";
 import path from "path";
 import { GoogleGenAI } from "@google/genai";
 import initialRagDb from "../src/data/rag_db.json";
 
-dotenvConfig();
+dotenv.config();
 
 const dbPath = path.join(process.cwd(), "src/data/rag_db.json");
 
